@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path 'cocktails.jpg' %>);">
+<div class="banner" style="background-image: url(<%= image_path 'cocktails.jpg' %>);">
   <div class="banner-content">
     <h1>Livingstone</h1>
     <p>WELCOME TO THE PLANTER'S CLUB</p>
@@ -10,14 +10,19 @@
 <div class="container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://assets.punchdrink.com/wp-content/uploads/2016/03/Article-Vodka-Cocktail-Recipe-Duke-Martini-London-Giuseppe-Gonzalez-Suffolk-Arms-Espresso-Martini-NYC.jpg');">
-          <div class="card-description">
-            <h2><%= link_to cocktail.name, cocktail_path(cocktail), class: 'card-link' %></h2>
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class='card-wrap'>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://i.pinimg.com/originals/37/d1/6b/37d16bd28215f0c908728b00b215f0d8.jpg');">
+              <div class='card-description'>
+                <h2><%= link_to cocktail.name, cocktail_path(cocktail), class: 'card-link' %></h2>
+              </div>
+            </div>
           </div>
-          
         </div>
       </div>
+    </div>
     <% end %>
   </div>
 </div>
