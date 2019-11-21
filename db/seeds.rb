@@ -5,9 +5,38 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Ingredient.create(name: 'lemon')
-Ingredient.create(name: 'ice')
-Ingredient.create(name: 'mint leaves')
-Ingredient.create(name: 'lavender')
-Ingredient.create(name: 'soda')
-Ingredient.create(name: 'egg white')
+Ingredient.create(name: 'Lemon')
+Ingredient.create(name: 'Ice')
+Ingredient.create(name: 'Mint leaves')
+Ingredient.create(name: 'Lavender')
+Ingredient.create(name: 'Chia seeds')
+Ingredient.create(name: 'Egg white')
+Ingredient.create(name: 'Pine needles')
+Ingredient.create(name: 'Peas')
+Ingredient.create(name: 'Orange slices')
+Ingredient.create(name: 'Kombucha')
+Ingredient.create(name: 'Matcha')
+Ingredient.create(name: 'Birch sap')
+Ingredient.create(name: 'Cannabis')
+Ingredient.create(name: 'Cinnamon rolls')
+Ingredient.create(name: 'Ginger essence')
+Ingredient.create(name: 'Juniper Berries')
+Ingredient.create(name: 'Maple Sirup')
+Ingredient.create(name: 'Pineapple Pieces')
+Ingredient.create(name: 'Sirup')
+
+# require 'open-uri'
+
+# puts "Destroy ingredients"
+# Ingredient.destroy_all if Rails.env.development?
+
+# puts "Destroy Cocktails"
+# Cocktail.destroy_all if Rails.env.development?
+
+# puts "Create ingredients"
+# url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
+# ingredients = JSON.parse(open(url).read)
+# ingredients["drinks"].each do |ingredient|
+#   i = Ingredient.create(name: ingredient["strIngredient1"])
+#   puts "create #{i.name}"
+# end

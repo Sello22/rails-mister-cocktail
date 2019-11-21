@@ -1,6 +1,17 @@
-<h1>New Cocktails</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1>Create a new cocktail</h1>
+
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name %>
+        <%= f.button :submit, class: 'btn btn-danger' %>
+      <% end %>
+    </div>
+  </div>
+</div>
 
 <%= render 'form', cocktail: @cocktail %>
 <!-- gets the method from _form.html.erb-->
-
 <%= link_to 'Back', cocktails_path %>
+
